@@ -381,7 +381,7 @@ async alertPedidoSave() {
   this.navCtrl.navigateForward("/dashboard");
   const alert = await this.alertCtrl.create({
     header: 'Operacion Exitosa',
-    message: 'Hemos recibido tu solicitud de reparto. ¡Gracias por confiar en ElEstore!',
+    message: 'Hemos recibido tu solicitud de reparto. ¡Gracias por confiar en ElEstor!',
     buttons: [
       {
         text: 'Ver pedido',
@@ -441,7 +441,7 @@ async alertPedidoSave() {
         Method: "card",
         SourceId: this.tarjetaSelect,
         Amount:this.total,
-        Description: "Pago de servicio - ElEstore",
+        Description: "Pago de servicio - ElEstor",
         DeviceSessionId: this.deviceSessionId,
         CustomerId: this.customerOpenid.id
       }
